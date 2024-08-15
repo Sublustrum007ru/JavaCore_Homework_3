@@ -105,9 +105,9 @@ public class Employee implements Comparable<Employee>{
         this.age = age;
 
     }
-
+    @Override
     public int compareTo(Employee args){
-        return (this.getAge() - args.getAge()) * -1;
+        return (this.getAge() - args.getAge());
     }
 
 //    public String toString(){
